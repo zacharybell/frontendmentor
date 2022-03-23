@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  background: hsl(217, 54%, 11%);
+}
+
+hr {
+  background-color: hsl(215, 32%, 27%);
+  border: none;
+  height: 1px;
+  margin: 15px 0;
+}
+
+.border-radius-5 {
+  border-radius: 5%;
+}
+
+.margin-r-5 {
+  margin-right: 5px;
+}
+
+.icon-clock {
+  width: 15px;
+  height: 15px;
+  content: url("./images/icon-clock.svg");
+}
+
+.card-image-container {
+  position: relative;
+}
+
+.card-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: hsla(178, 100%, 50%, 0.3);
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image-overlay img {
+  height: 25%;
+  width: 25%;
+}
+
+.card-image-container:hover .card-image-overlay {
+  opacity: 1;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.etherium-name {
+  font-weight: 600;
+  margin-top: 18px;
+  color: #fff;
+}
+
+.etherium-name:hover {
+  color: var(--cyan);
+}
+
+.etherium-details {
+  margin-top: 20px;
+  color: var(--soft-blue);
+}
+
+.icon-etherium {
+  width: 15px;
+  height: 15px;
+  content: url("./images/icon-ethereum.svg");
+}
+
+.card {
+  background: hsl(216, 50%, 16%);
+  width: 325px;
+  padding: 25px;
+  margin: 100px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.price {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: var(--cyan);
+}
+
+.expiration {
+  display: flex;
+  align-items: center;
+  color: var(--soft-blue);
+}
+
+.creator {
+  color: var(--soft-blue);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.creator img {
+  display: block;
+  left: 350px;
+  height: 35px;
+  border: solid;
+  border-radius: 100%;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.creator-name {
+  color: #fff;
+}
+
+.creator-name:hover {
+  color: var(--cyan);
+}
